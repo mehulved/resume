@@ -21,6 +21,6 @@ jobs:
         uses: actions/upload-artifact@v2
         id: upload-document
         with:
-          name: 'Mehul_Ved_resume.pdf'
-          path: ${{ steps.publish-document.outputs.pdf }}
+          name: 'Mehul_Ved_Resume.pdf'
+          path: 'Mehul_ved_Resume.pdf
         if: startsWith(github.ref, 'refs/tags/')
