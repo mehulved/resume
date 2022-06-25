@@ -1,0 +1,183 @@
+\documentclass[11pt]{spidercv}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+
+
+\begin{document}
+
+    %----------------------------------------------------------------------------------------
+    %	TOP BAR
+    %----------------------------------------------------------------------------------------
+    \begin{TopBar}{\ColorTextSide}
+        \Name{\ColorHighlight}{Mehul Ved}{EM, DevOps}{Colearn}
+
+        %%% Contact
+        \TextSeparator{\ColorHighlight}{Contact}
+        \begin{DoubleColumns}
+            \begin{ItemList}{\ColorHighlight}
+                \item [\Large\faAt] \href{mailto:mehul@mehulved.com}{mehul@mehulved.com}
+                \item [\Large\faMobile] +919619596659
+                \item [\Large\faMapMarker] Mumbai, India
+            \end{ItemList}
+            \nextcolumn
+            \begin{ItemList}{\ColorHighlight}
+                \item [\Large\faGithub] \href{https://github.com/mehulved}{mehulved}
+                \item [\Large\faLinkedinSquare] \href{https://www.linkedin.com/mehul-ved}{linkedin}
+            \end{ItemList}
+        \end{DoubleColumns}
+
+        %%% Interests
+        \TextSeparator{\ColorHighlight}{Interests}
+        \begin{TripleColumns}
+            \begin{ItemList}{\ColorHighlight}
+                \item [] Building Products
+            \end{ItemList}
+            \nextcolumn
+            \begin{ItemList}{\ColorHighlight}
+                \item [] Sports
+            \end{ItemList}
+            \nextcolumn
+            \begin{ItemList}{\ColorHighlight}
+                \item [] Coffee Brewing
+            \end{ItemList}
+        \end{TripleColumns}
+    \end{TopBar}
+
+
+
+    %----------------------------------------------------------------------------------------
+    %	SIDE BAR
+    %----------------------------------------------------------------------------------------
+    \begin{SideBar}{\ColorBackground}{\ColorTextSide}
+        
+        %%% Soft skills
+        \TextSeparatorBis{\ColorHighlight}{\faUser}{Soft skills}
+        
+        \Label{\ColorHighlight}{Communication}
+        \Label{\ColorHighlight}{Engineering Management}
+        \Label{\ColorHighlight}{Community Building}
+        \Label{\ColorHighlight}{Team Building}
+        \Label{\ColorHighlight}{Designing Processes}
+        
+        \vspace*{1cm}
+
+        %%% Hard skills
+        \TextSeparatorBis{\ColorHighlight}{\faGears}{Hard skills}
+        \begin{ItemList}{\ColorHighlight}
+            \item [\faCode] Cloud Computing, Serverless
+            \item [\faFileCodeO]  Version Control, Git Flow, CI/CD
+            \item [\faCubes]  Agile Development, Product Thinking
+            \item [\faPencilSquareO]  Documentation, Debugging
+            \item [\faVideoCamera]  Product Engineering
+            \item [\faGear]  Linux, Containers, Networking
+        \end{ItemList}
+
+        \vspace*{1cm}
+
+        %%% Spider
+        \TextSeparatorBis{\ColorHighlight}{\faTerminal}{Engineering Ladder}
+
+        \begin{SpiderDiagram}{\ColorTextSide}{\ColorHighlight}
+            \addSkill{Technology}{3}
+            \addSkill{System}{3}
+            \addSkill{People}{4}
+            \addSkill{Processes}{5}
+            \addSkill{Influence}{5}
+        \end{SpiderDiagram}
+
+        \vspace*{1cm}
+
+        %%% Languages
+        \TextSeparatorBis{\ColorHighlight}{\faLanguage}{Languages}
+
+        \begin{SkillGauges}{\ColorHighlight}
+            \addGauge{English}{5}
+            \addGauge{Hindi}{4}
+            \addGauge{Marathi}{4}
+            \addGauge{Gujarati}{3}
+        \end{SkillGauges}
+    \end{SideBar}
+
+    
+
+    %----------------------------------------------------------------------------------------
+    %	Picture
+    %----------------------------------------------------------------------------------------
+    \DefineProfile{\ColorOther}{\ColorTextSide}{img/profile.jpg}
+
+
+
+
+    %----------------------------------------------------------------------------------------
+    %	Main
+    %----------------------------------------------------------------------------------------
+    \begin{MainPart}
+
+    %%% Experiences 
+    \MainTitleBis{\ColorHighlight}{\ColorTextMain}{Experiences}{\faSuitcase}
+    \Experience
+        {\ColorHighlight}
+		{Engineering Manager - Devops}
+		{Colearn}
+        {2021-\faUndo}
+        {   
+            Managing the devops enablement atColearn.\\
+            Introduced new proesses to streamline operations which is critical to efficient operations of a horizontal team.Work closely with team to introduce processes, practices, mentoring to ensure smooth functioning as a team. \\
+            Redesign of CDK Codebase to improve efficiency of the team.
+        }
+    \Experience
+        {\ColorHighlight}
+		{Lead Devops Engineer}
+		{Nexsales}
+        {2013-2021}
+        {  
+        	Wrote the MVP and first design of the product. The authentication, authorization layers still operate as legacy services in production. \\ 
+            Introduced Devops in engineering. Moved from pets to cattle model of infrastructure handling. Brought down provisioning time for a new system from a few days to under 11 minutes. \\
+            Simplified newer projects by moving to cloud native setup - Google Cloud Build, Cloud App Engine, Google Cloud Run, Google Cloud LoadBalancer, Docker, Google Cloud SQL. It brought in high velocity while still maintaining very low failure rate.\\
+            Accelerate Metrics: \\
+            * Deployment Frequency: On Demand \\
+            * Lead Time for Changes: Less Than One Hour \\
+            * MTTR: Less Than 1 Day \\
+            * Change Failure Rate: < 20%
+        }
+
+    
+    %%% Education
+    \MainTitleBis{\ColorHighlight}{\ColorTextMain}{Education}{\faGraduationCap}
+    \Experience
+        {\ColorHighlight}
+		{B.Com. in Banking and Insurance}
+		{Mumbai University(Jai Hind College)}
+        {2002-2007}
+        {   
+            Graduated as Bachelors of Commmerce in Banking and Insurance from Jai Hind College under Mumbai University.
+        }
+
+
+    %%% Communities
+    \MainTitleBis{\ColorHighlight}{\ColorTextMain}{Communities}{\faUsers}
+    \Experience
+        {\ColorHighlight}
+		{Mumbai Sea Swimmers}
+		{}
+		{2016-\faUndo}
+        {   
+            A community of passionate people pushing their boundaries in open water swimming. Have catered to 1000s of swimmers in 6 years of operation.
+        }
+	\Experience
+        {\ColorHighlight}
+		{IndiaCBC}
+		{}
+		{2018-\faUndo}
+        {   
+            A well rounded entity with participation from estate owners, business owners, traders, equipment sellers, coffee roasters, baristas, home brewers thus forming a feedback loop and enabling communications amongst various parties.
+        }
+        
+    \end{MainPart}
+
+    
+
+\end{document}
+
+
