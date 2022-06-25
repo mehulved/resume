@@ -22,5 +22,5 @@ jobs:
         id: upload-document
         with:
           name: 'Mehul_Ved_Resume.pdf'
-          path: 'Mehul_ved_Resume.pdf
+          path: 'Mehul_ved_Resume.pdf'
         if: startsWith(github.ref, 'refs/tags/')
