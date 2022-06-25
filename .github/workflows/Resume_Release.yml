@@ -17,10 +17,10 @@ jobs:
         with:
           name: PDF
           path: Mehul_Ved_Resume.pdf
-      - name: Upload Document
-        uses: actions/upload-artifact@v2
-        id: upload-document
+      - name: Attach PDF to Release
+        uses: actions/upload-release-asset@v1
         with:
-          name: 'Mehul_Ved_Resume.pdf'
-          path: 'Mehul_ved_Resume.pdf'
-        if: startsWith(github.ref, 'refs/tags/')
+          upload_url: ${{ steps.release.outputs.upload_url }}
+          asset_path: 'Mehul_Ved_Resume.pdf'
+          asset_name: 'Mehul_Ved_Resume.pdf'
+          asset_content_type: application/pdf
