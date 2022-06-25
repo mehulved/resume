@@ -44,5 +44,3 @@ jobs:
           asset_path: ${{ steps.publish-document.outputs.pdf }}
           asset_name: 'Mehul_Ved_Resume.pdf'
           asset_content_type: application/pdf
-jobs:
-
