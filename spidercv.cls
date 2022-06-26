@@ -31,7 +31,6 @@
 
 \setlength{\parindent}{0mm} % Suppress paragraph indentation
 \usepackage[hidelinks]{hyperref} % Required for links but hide the default boxes around links
-\newcommand{\lorem}{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus.} % Dummy text
 \pagestyle{empty} % No headers or footers
 \usepackage{moresize} % Provides more font size commands (\HUGE and \ssmall)
 \usepackage{fontawesome} % fontawesome
@@ -43,10 +42,11 @@
 %----------------------------------------------------------------------------------------
 \usepackage[dvipsnames]{xcolor}
 
-\definecolor{Black}{HTML}{212121}
+\definecolor{Black}{HTML}{293241}
 \definecolor{White}{HTML}{FFFFFF}
-\definecolor{GreenArmy}{HTML}{252e25}
-\definecolor{GreenIT}{HTML}{4caf50}
+\definecolor{LightBlue}{HTML}{e0fbfc}
+\definecolor{Orange}{HTML}{ee6c4d}
+\definecolor{DarkBlue}{HTML}{3d5a80}
 
 %%%%% color macros, use it at the beginning of your cv to quickly use the enterprise colors (Pro HRD tips)
 \newcommand{\DefineColorMacros}[5]{% COLORS : TextSide / TextMain / HighLight / Background /Other
@@ -58,7 +58,7 @@
     \color{\ColorTextMain} % Default text color
 }
 
-\DefineColorMacros{White}{Black}{GreenIT}{Black}{GreenArmy}
+\DefineColorMacros{White}{Black}{LightBlue}{DarkBlue}{Orange}
 
 
 
