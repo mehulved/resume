@@ -1,5 +1,7 @@
 on:
   push:
+    tags:
+     - v*.*.*
   release:
     types: [publish]
 
@@ -37,6 +39,6 @@ jobs:
         uses: actions/upload-release-asset@v1
         with:
           upload_url: ${{ steps.release.outputs.upload_url }}
-          asset_path: ${{ steps.build.outputs.path }}
+          asset_path: Mehul_Ved_Resume.pdf
           asset_name: 'Mehul_Ved_Resume.pdf'
           asset_content_type: application/pdf
