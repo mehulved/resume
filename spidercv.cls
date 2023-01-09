@@ -300,9 +300,9 @@
 
 \def\hrulefill{\leavevmode\leaders\hrule height 0.35mm\hfill\kern\z@} % ~ very thick
 %%%%%%% Experience
-\newcommand{\Experience}[5]{%Highlight color,  Ttile, Left subtitle, Right subtitle, Description
+\newcommand{\Experience}[5]{%Highlight color,  Title, Left subtitle, Right subtitle, Description
     \begin{flushleft}
-        \large{\textbf{#2\hfill{\small\color{#1}#4}}}\\\vspace{-.4ex}
+        \large{\textbf{#2\hfill{\small\color{DarkBlue}#4}}}\\\vspace{-.4ex}
         \small{{\color{#1}\hrulefill}
         \hspace{1ex}\raisebox{-.4ex}{\color{Black}\textbf{#3}}
         }\\
